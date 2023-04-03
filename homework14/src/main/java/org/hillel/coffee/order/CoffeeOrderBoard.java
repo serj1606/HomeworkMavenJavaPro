@@ -9,9 +9,8 @@ public class CoffeeOrderBoard {
 
   private final Queue<Order> orders = new LinkedList<>();
 
-  public int add(String name) {
+  public void add(String name) {
     orders.add(new Order(++number, name));
-    return number;
   }
 
   public void deliver() {

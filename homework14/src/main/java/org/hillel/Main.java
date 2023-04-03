@@ -1,5 +1,4 @@
 package org.hillel;
-
 import org.hillel.coffee.order.CoffeeOrderBoard;
 
 public class Main {
