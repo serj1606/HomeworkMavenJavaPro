@@ -22,8 +22,6 @@ public class SimpleTree {
       current.setLeft(addRecursive(current.getLeft(), value));
     } else if (value > current.getValue()) {
       current.setRight(addRecursive(current.getRight(), value));
-    } else {
-      return current;
     }
     return current;
   }
