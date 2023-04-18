@@ -28,7 +28,7 @@ public class Box<T extends Fruit> {
   }
 
   public float getWeight() {
-    if (fruits.isEmpty()) { // виправив fruits.size() == 0 на fruits.isEmpty()
+    if (fruits.isEmpty()) {  // виправив fruits.size() == 0 на fruits.isEmpty()
       return 0.0f;
     } else {
       float weight = fruits.size() * fruits.get(0).getWeight();
