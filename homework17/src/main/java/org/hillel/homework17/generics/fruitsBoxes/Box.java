@@ -14,7 +14,7 @@ public class Box<T extends Fruit> {
   }
 
   public void addFruit(T fruit) {
-    if (fruits.size() == 0 || fruits.get(0).getClass().equals(fruit.getClass())) {
+    if (fruits.isEmpty() || fruits.get(0).getClass().equals(fruit.getClass())) { // виправив fruits.size() == 0 на fruits.isEmpty()
       fruits.add(fruit);
     } else {
       System.out.println("Cannot add fruit of different type");
@@ -28,7 +28,7 @@ public class Box<T extends Fruit> {
   }
 
   public float getWeight() {
-    if (fruits.size() == 0) {
+    if (fruits.isEmpty()) { // виправив fruits.size() == 0 на fruits.isEmpty()
       return 0.0f;
     } else {
       float weight = fruits.size() * fruits.get(0).getWeight();
@@ -41,7 +41,7 @@ public class Box<T extends Fruit> {
   }
 
   public void merge(Box<T> otherBox) {
-    if (this.fruits.size() == 0 || otherBox.fruits.size() == 0 ||
+    if (this.fruits.isEmpty() || otherBox.fruits.isEmpty() ||    // виправив this.fruits.size() == 0 на this.fruits.isEmpty()
         this.fruits.get(0).getClass().equals(otherBox.fruits.get(0).getClass())) {
       this.fruits.addAll(otherBox.fruits);
       otherBox.fruits.clear();
