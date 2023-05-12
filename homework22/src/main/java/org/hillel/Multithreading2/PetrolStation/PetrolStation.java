@@ -5,8 +5,8 @@ import lombok.Getter;
 
 @Getter
 public class PetrolStation implements GasStation {
-   volatile int amountOfFuelAtCistern;
-   volatile int availableAmountOfFuel;
+  volatile int amountOfFuelAtCistern;
+  volatile int availableAmountOfFuel;
 
   private final int numberOfDispensers;
   private final AtomicInteger numberOfBusyDispensers = new AtomicInteger(0);
@@ -36,7 +36,8 @@ public class PetrolStation implements GasStation {
 
     fillUpTheCar(petrolRequest);
 
-    System.out.println(name + " has got " + petrolRequest + ", amount of fuel at cistern left: " + amountOfFuelAtCistern);
+    System.out.println(name + " has got " + petrolRequest + ", amount of fuel at cistern left: " +
+        amountOfFuelAtCistern);
     leavePetrolStation();
   }
 

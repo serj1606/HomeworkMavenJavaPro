@@ -2,6 +2,7 @@ package org.hillel.Multithreading2.ThreadSafeList;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class ThreadSafeListTest {
@@ -16,7 +17,6 @@ public class ThreadSafeListTest {
     assertEquals(2, list.get(1));
     assertEquals(3, list.get(2));
   }
-
   @Test
   void testRemove() {
     ThreadSafeList<Integer> list = new ThreadSafeList<>();
@@ -29,6 +29,7 @@ public class ThreadSafeListTest {
     assertEquals(1, list.get(0));
     assertEquals(3, list.get(1));
   }
+
   @Test
   void testGet() {
     ThreadSafeList<Integer> list = new ThreadSafeList<>();

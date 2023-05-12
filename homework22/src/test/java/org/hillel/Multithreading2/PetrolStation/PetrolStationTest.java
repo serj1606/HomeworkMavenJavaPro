@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 public class PetrolStationTest {
-
   @Test
   public void testCreateOrderDecreasesAvailableAmountOfFuel() {
     PetrolStation petrolStation = new PetrolStation(100, 2);
