@@ -41,6 +41,7 @@ public class ThreadSafeListTest {
     assertEquals(2, list.get(1));
     assertEquals(3, list.get(2));
   }
+
 }
 
 
