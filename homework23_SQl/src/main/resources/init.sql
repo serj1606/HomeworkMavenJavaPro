@@ -22,10 +22,9 @@ PRIMARY KEY (id)
 );
 
 CREATE TABLE ScheduleLesson (
-id INT NOT NULL AUTO_INCREMENT,
 schedule_id INT NOT NULL,
 lesson_id INT NOT NULL,
-PRIMARY KEY (id),
+PRIMARY KEY (schedule_id, lesson_id),
 FOREIGN KEY (schedule_id) REFERENCES Schedule(id),
 FOREIGN KEY (lesson_id) REFERENCES Lesson(id)
 );
