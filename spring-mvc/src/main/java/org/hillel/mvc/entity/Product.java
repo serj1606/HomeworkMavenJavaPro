@@ -20,5 +20,6 @@ public class Product {
   UUID id = UUID.randomUUID();
   String name;
   double cost;
+
 }
 

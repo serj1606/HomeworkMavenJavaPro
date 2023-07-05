@@ -17,5 +17,6 @@ public class Order {
   Date date = new Date();
   double cost;
   List<Product> products;
+
 }
 

@@ -48,6 +48,7 @@ public class OrderController {
   public String addOrder(@ModelAttribute("order") Order order) {
     orderRepository.addOrder(order);
     return "redirect:/orders";
+
   }
 }
 
